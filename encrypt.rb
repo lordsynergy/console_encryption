@@ -16,5 +16,6 @@ puts "Вот что получилось:"
 case user_choice
 when 1 then puts Digest::MD5.hexdigest(user_input)
 when 2 then puts Digest::SHA1.hexdigest(user_input)
+when 3 then puts Digest::SHA2.hexdigest(user_input)
 else puts user_input
 end
